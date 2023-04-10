@@ -14,6 +14,24 @@
   --char-image-lv5: url("../img/5/img.jpg");
 
   --gradient-btn-background: linear-gradient(to right, #fde7ea, #cc868f);
+
+  font-size: 16px;
+  font-family: PoppinsRegular;
+}
+
+@font-face {
+  font-family: PoppinsMedium;
+  src: url("../fonts/Poppins/Poppins-Medium.ttf");
+}
+
+@font-face {
+  font-family: PoppinsRegular;
+  src: url("../fonts/Poppins/Poppins-Regular.ttf");
+}
+
+@font-face {
+  font-family: PoppinsSemibold;
+  src: url("../fonts/Poppins/Poppins-SemiBold.ttf");
 }
 
 .gameWrapper {
@@ -52,6 +70,7 @@
 
 .gameBtn:active {
   box-shadow: none;
+  background-color: #cc868f;
 }
 
 .gameInp {
@@ -60,6 +79,10 @@
   width: 40%;
   min-width: 400px;
   font-size: 1.2rem;
+}
+
+.gameInp ::placeholder {
+  font-family: PoppinsRegular;
 }
 
 .gameSection {
@@ -83,6 +106,89 @@
   flex-direction: column;
   gap: 10px;
   text-transform: uppercase;
+}
+
+.app {
+  position: relative;
+  height: 95vh;
+  width: 95%;
+  min-width: 500px;
+}
+
+.app__scoreWrapper {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+  align-items: center;
+  padding: 2%;
+}
+
+.app__points {
+  width: 300px;
+}
+
+.app__characterWrapper {
+  width: 95%;
+  height: 70vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5%;
+}
+
+.app__character {
+  height: 60vh;
+  width: 500px;
+  background-image: url("../img/1/img.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.app__character:hover {
+  cursor: pointer;
+}
+
+.app__pointsBtnWrapper {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+
+}
+
+.app__pointsBtn {
+  width: 150px;
+  height: 150px;
+  padding: 20px;
+  position: fixed;
+  bottom: 20px;
+  right: 50px;
+  box-sizing: border-box;
+  overflow: hidden;
+  box-shadow: 1px 1px 15px #ffffff99;
+  background-color: #ffffffaa;
+  border-radius: 50px;
+}
+
+.app__pointsImg {
+  background-image: url("../img/colors.png");
+  width: 120px;
+  height: 120px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  z-index: 20;
+}
+
+.result__section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 500px;
+  height: 30vh;
+  gap: 40px;
+  font-family: PoppinsSemibold;
+  font-size: 2rem;
 }
 
 .hidden {
