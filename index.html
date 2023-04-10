@@ -11,50 +11,52 @@
 </head>
 
 <body>
-  <div class="registrationForm">
-    <form>
-      <input type="text" class="registrationForm__nik" placeholder="Enter your nickname">
-      <input type="text" class="registrationForm__name" placeholder="Enter your name">
-      <input type="email" class="registrationForm__email" placeholder="Enter your email">
-      <button type="submit" class="registrationForm__submitBtn">Create user</button>
-    </form>
-  </div>
-
-  <div class="startGame">
-    <button type="button" class="startGame__startBtn">Start game</button>
-  </div>
-
-  <div class="app">
-    <div class="app__scoreWrapper">
-      <div class="app__userName"></div>
-      <div class="app__userScore"></div>
-      <div class="app__userScoreProgress"></div>
-      <div class="app__userLevel"></div>
+  <div class="gameWrapper">
+    <div class="gameSection registrationForm__Container">
+      <form class="registrationForm">
+        <input type="text" class="gameInp registrationForm__nik" placeholder="Enter your nickname">
+        <input type="text" class="gameInp registrationForm__name" placeholder="Enter your name">
+        <input type="email" class="gameInp registrationForm__email" placeholder="Enter your email">
+        <button type="submit" class="gameBtn registrationForm__submitBtn">Create user</button>
+      </form>
     </div>
-    <div class="app__characterWrapper">
-      <div>
-        <img src="" alt="" class="app__characterImg">
+
+    <div class="gameSection startGame hidden">
+      <button type="button" class="gameBtn startGame__startBtn">Start game</button>
+    </div>
+
+    <div class="app hidden">
+      <div class="app__scoreWrapper">
+        <div class="app__userName"></div>
+        <div class="app__userScore"></div>
+        <div class="app__userScoreProgress"></div>
+        <div class="app__userLevel"></div>
+      </div>
+      <div class="app__characterWrapper">
+        <div>
+          <img src="" alt="" class="app__characterImg">
+        </div>
+      </div>
+      <div class="app__pointsBtnWrapper">
+        <div>
+          <img class="app__addPoints" src="" alt="">
+        </div>
       </div>
     </div>
-    <div class="app__pointsBtnWrapper">
-      <div>
-        <img class="app__addPoints" src="" alt="">
+
+    <div class="gameSection result hidden">
+      <div class="result__nextLevel">
+        <div>You win in this level</div>
+        <div>Congratulations 🎉</div>
+        <button type="button" class="gameBtn result__finishBtn">Start next level</button>
       </div>
-    </div>
-  </div>
+      <div class="result__final">
+        <div>You win 🎉</div>
+        <div>Congratulations 🎉</div>
+        <button type="button" class="gameBtn result__finishBtn">Finish game</button>
+      </div>
 
-  <div class="result">
-    <div class="result__nextLevel">
-      <div>You win in this level</div>
-      <div>Congratulations 🎉</div>
-      <button type="button">Start next level</button>
     </div>
-    <div class="result__final">
-      <div>You win 🎉</div>
-      <div>Congratulations 🎉</div>
-      <button type="button" class="result__finishBtn">Finish game</button>
-    </div>
-
   </div>
 
   <script src="./script/script.js"></script>

@@ -1,0 +1,81 @@
+:root {
+  --bg-image-start: url("../img/startGame-bg.png");
+  --bg-image-end: url("../img/finishGame-bg.png");
+  --bg-image-lv1: url("../img/1/bg.jpg");
+  --bg-image-lv2: url("../img/2/bg.jpg");
+  --bg-image-lv3: url("../img/3/bg.jpg");
+  --bg-image-lv4: url("../img/4/bg.jpg");
+  --bg-image-lv5: url("../img/5/bg.jpg");
+
+  --char-image-lv1: url("../img/1/img.jpg");
+  --char-image-lv2: url("../img/2/img.jpg");
+  --char-image-lv3: url("../img/3/img.jpg");
+  --char-image-lv4: url("../img/4/img.jpg");
+  --char-image-lv5: url("../img/5/img.jpg");
+
+  --gradient-btn-background: linear-gradient(to right, #fde7ea, #cc868f);
+}
+
+.gameWrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 1% 5%;
+  background-image: var(--bg-image-start);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+  width: 100%;
+  max-width: 100%;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+.gameBtn {
+  background-image: var(--gradient-btn-background);
+  padding: 12px 24px;
+  font-size: 1.3rem;
+  border-radius: 30px;
+  border: 1px solid black;
+  box-shadow: 5px 6px black;
+  transition: all 0.2s;
+}
+
+.gameBtn:hover {
+  cursor: pointer;
+  background-image: none;
+  background-color: #fde7ea;
+  box-shadow: 2px 3px black;
+  color: #000000;
+}
+
+.gameBtn:active {
+  box-shadow: none;
+}
+
+.gameInp {
+  padding: 10px;
+  border: 1px solid #000;
+  width: 40%;
+  min-width: 400px;
+  font-size: 1.2rem;
+}
+
+.gameSection {
+  background: #ddffffbb;
+  padding: 5%;
+  border-radius: 30px;
+}
+
+.registrationForm {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+}
+
+.hidden {
+  display: none;
+}
