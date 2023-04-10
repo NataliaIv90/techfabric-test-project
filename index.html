@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./style/reset.css">
+  <link rel="stylesheet" href="./style/style.css">
+  <title>Techfabric clicker game project </title>
+</head>
+
+<body>
+  <div class="registrationForm">
+    <form>
+      <input type="text" class="registrationForm__nik" placeholder="Enter your nickname">
+      <input type="text" class="registrationForm__name" placeholder="Enter your name">
+      <input type="email" class="registrationForm__email" placeholder="Enter your email">
+      <button type="submit" class="registrationForm__submitBtn">Create user</button>
+    </form>
+  </div>
+
+  <div class="startGame">
+    <button type="button" class="startGame__startBtn">Start game</button>
+  </div>
+
+  <div class="app">
+    <div class="app__scoreWrapper">
+      <div class="app__userName"></div>
+      <div class="app__userScore"></div>
+      <div class="app__userScoreProgress"></div>
+      <div class="app__userLevel"></div>
+    </div>
+    <div class="app__characterWrapper">
+      <div>
+        <img src="" alt="" class="app__characterImg">
+      </div>
+    </div>
+    <div class="app__pointsBtnWrapper">
+      <div>
+        <img class="app__addPoints" src="" alt="">
+      </div>
+    </div>
+  </div>
+
+  <div class="result">
+    <div class="result__nextLevel">
+      <div>You win in this level</div>
+      <div>Congratulations 🎉</div>
+      <button type="button">Start next level</button>
+    </div>
+    <div class="result__final">
+      <div>You win 🎉</div>
+      <div>Congratulations 🎉</div>
+      <button type="button" class="result__finishBtn">Finish game</button>
+    </div>
+
+  </div>
+
+  <script src="./script/script.js"></script>
+</body>
+
+</html>
