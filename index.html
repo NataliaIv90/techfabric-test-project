@@ -14,9 +14,21 @@
   <div class="gameWrapper">
     <div class="gameSection registrationForm__Container">
       <form class="registrationForm">
-        <input type="text" class="gameInp registrationForm__nik" placeholder="Enter your nickname">
-        <input type="text" class="gameInp registrationForm__name" placeholder="Enter your name">
-        <input type="email" class="gameInp registrationForm__email" placeholder="Enter your email">
+        <div class="registrationForm__inpWrapper">
+          <label for="registrationForm__nik"></label>
+          <input type="text" class="gameInp registrationForm__nik" id="registrationForm__nik"
+            placeholder="Enter your nickname">
+        </div>
+        <div class="registrationForm__inpWrapper">
+          <label for="registrationForm__name"></label>
+          <input type="text" class="gameInp registrationForm__name" id="registrationForm__name"
+            placeholder="Enter your name">
+        </div>
+        <div class="registrationForm__inpWrapper">
+          <label for="registrationForm__email"></label>
+          <input type="email" class="gameInp registrationForm__email" id="registrationForm__email"
+            placeholder="Enter your email">
+        </div>
         <button type="submit" class="gameBtn registrationForm__submitBtn">Create user</button>
       </form>
     </div>
