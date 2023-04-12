@@ -145,7 +145,7 @@ class GameObj {
     this.currentScore = 0;
     document.querySelector(".app__lvlValue").innerText = this.lvl;
     this.changeGameData();
-    document.querySelector(".app__currentLvlProgress").value = currentScoreValue;
+    document.querySelector(".app__currentLvlProgress").value = this.currentScore;
   }
 
   // закінчення гри
