@@ -179,6 +179,21 @@
   font-size: 2rem;
 }
 
+.gitLink {
+  position: fixed;
+  bottom: 1rem;
+  right: 1rem;
+  display: flex;
+  justify-content: right;
+  align-items: flex-end;
+  gap: 1rem;
+  opacity: 0.5;
+}
+
+.gitLink:hover {
+  opacity: 1;
+}
+
 .hidden {
   display: none;
 }
