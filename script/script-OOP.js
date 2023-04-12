@@ -88,7 +88,6 @@ class GameObj {
     localStorage.setItem("name", nameInp.value);
     localStorage.setItem("nick", nickInp.value);
     localStorage.setItem("email", emailInp.value);
-    localStorage.setItem("totalScore", 0);
     this.resetUserScores();
     document.querySelector(".app__userName").innerText = nameInp.value;
     document.querySelector(".registrationForm__Container").classList.add("hidden");

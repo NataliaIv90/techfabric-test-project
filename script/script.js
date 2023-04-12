@@ -58,7 +58,6 @@ function checkForm() {
     localStorage.setItem("name", nameInp.value);
     localStorage.setItem("nick", nickInp.value);
     localStorage.setItem("email", emailInp.value);
-    localStorage.setItem("totalScore", 0);
     resetUserScores();
     appName.innerText = nameInp.value;
     registrationForm.parentElement.classList.add("hidden");
