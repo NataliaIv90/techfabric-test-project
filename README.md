@@ -1,6 +1,8 @@
 # techfabric-test-project
  Color your Unicorn clicker game
 
+ link - https://nataliaiv90.github.io/techfabric-test-project/
+
 ## ****Clicker Game Task****
 
 Your task is to create a Clicker game using JavaScript with the following requirements:
