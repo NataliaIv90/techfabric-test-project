@@ -11,62 +11,65 @@
 </head>
 
 <body>
-  <div class="gameWrapper">
-    <div class="gameSection registrationForm__Container hidden">
+  <div class="gameWrapper ">
+    <div class="gameSection registrationForm__Container ">
       <form class="registrationForm">
         <div class="registrationForm__inpWrapper">
           <label for="registrationForm__nik">Nickname</label>
           <input type="text" class="gameInp registrationForm__nik" id="registrationForm__nik"
             placeholder="Enter your nickname" required>
+          <div class="registrationForm__inpTip hidden">Nick is not valid </div>
         </div>
         <div class="registrationForm__inpWrapper">
           <label for="registrationForm__name">Name</label>
           <input type="text" class="gameInp registrationForm__name" id="registrationForm__name"
             placeholder="Enter your name" required>
+          <div class="registrationForm__inpTip hidden">Name is not valid </div>
         </div>
         <div class="registrationForm__inpWrapper">
           <label for="registrationForm__email">Email</label>
           <input type="email" class="gameInp registrationForm__email" id="registrationForm__email"
             placeholder="Enter your email" required>
+          <div class="registrationForm__inpTip hidden">Email is not valid </div>
         </div>
         <button type="submit" class="gameBtn registrationForm__submitBtn">Create user</button>
       </form>
     </div>
 
-    <div class="startGame hidden">
-      <button type="button" class="gameBtn startGame__startBtn">Start game</button>
-    </div>
+
 
     <div class="app hidden">
       <div class="gameSection app__scoreWrapper">
-        <div class="app__userName">Name</div>
+        <div>Name:
+          <span class="app__userName"></span>
+        </div>
         <div>Total scores: <span class="app__userScore">100</span></div>
-        <div class="app__userScoreProgress"> <input type="range" class="app__points" id="app__points" min="0" max="10"
-            value="5" disabled>
+        <div class="app__userScoreProgress">
+          <input type="range" class="app__currentLvlProgress" id="app__currentLvlProgress" min="0" max="10" value="5"
+            disabled>
         </div>
         <div class="app__userLevel">
           <span class="app__lvlValue">1</span> lvl
         </div>
       </div>
-      <div class="app__characterWrapper">
+
+      <div class="app__startGame ">
+        <button type="button" class="gameBtn app__startBtn">Start game</button>
+      </div>
+
+      <div class="app__characterWrapper hidden">
         <div class=" app__character">
         </div>
       </div>
-      <div class="app__pointsBtnWrapper">
-        <div class=" app__pointsBtn">
-          <div class=" app__pointsImg">
 
-          </div>
-        </div>
-      </div>
     </div>
 
-    <div class="gameSection result ">
-      <div class="result__section result__nextLevel">
+    <div class=" result ">
+      <div class="gameSection result__section result__nextLevel hidden">
         <div>You win in this level!!! 🎉</div>
-        <button type="button" class="gameBtn result__finishBtn">Start next level</button>
+        <button type="button" class="gameBtn result__nextLvlBtn">Start next level</button>
       </div>
-      <div class="result__section result__final hidden">
+      <div class="gameSection result__section result__final hidden">
         <div>You win!</div>
         <div>Congratulations 🎉🎉🎉</div>
         <button type="button" class="gameBtn result__finishBtn">Finish game</button>
