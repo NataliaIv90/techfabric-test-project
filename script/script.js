@@ -63,7 +63,6 @@ function checkForm() {
     appName.innerText = nameInp.value;
     registrationForm.parentElement.classList.add("hidden");
     app.classList.remove("hidden");
-    alert("Form submitted");
   }
 }
 

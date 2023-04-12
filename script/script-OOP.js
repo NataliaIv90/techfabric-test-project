@@ -93,7 +93,6 @@ class GameObj {
     document.querySelector(".app__userName").innerText = nameInp.value;
     document.querySelector(".registrationForm__Container").classList.add("hidden");
     document.querySelector(".app").classList.remove("hidden");
-    alert("Form submitted");
   }
 
   // Ф-я для зміни фону, картинки ворога та начення рівня на панелі стану
