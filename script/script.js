@@ -125,6 +125,7 @@ function toggleCongrats() {
   if (lvlValue < 5) {
     nextLvlBtn.parentElement.classList.toggle("hidden");
   } else {
+    document.querySelector(".result__totalScore").innerText = totalScoreValue;
     endGameBtn.parentElement.classList.toggle("hidden");
   }
 };
