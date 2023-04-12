@@ -80,6 +80,7 @@ registrationFormSubmitBtn.addEventListener("submit", (e) => {
 })
 
 // Добавляю клас hidden для підказки в разі невірного введеного значення інпутів
+
 document.querySelectorAll(".gameInp").forEach(el => {
   el.addEventListener("input", () => {
     el.nextElementSibling.classList.add("hidden");
